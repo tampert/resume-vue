@@ -1,0 +1,48 @@
+2025-03-10 16:08:10.691 CET [9939] LOG:  starting PostgreSQL 15.12 (Homebrew) on aarch64-apple-darwin24.2.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-03-10 16:08:10.692 CET [9939] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-10 16:08:10.692 CET [9939] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-10 16:08:10.693 CET [9939] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-10 16:08:10.694 CET [9942] LOG:  database system was shut down at 2025-03-10 16:07:59 CET
+2025-03-10 16:08:10.696 CET [9939] LOG:  database system is ready to accept connections
+2025-03-10 16:12:38.216 CET [10020] FATAL:  role "postgres" does not exist
+2025-03-10 16:13:10.697 CET [9940] LOG:  checkpoint starting: time
+2025-03-10 16:13:15.176 CET [9940] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.472 s, sync=0.003 s, total=4.479 s; sync files=11, longest=0.001 s, average=0.001 s; distance=272 kB, estimate=272 kB
+2025-03-10 16:18:10.176 CET [9940] LOG:  checkpoint starting: time
+2025-03-10 16:19:46.899 CET [9940] LOG:  checkpoint complete: wrote 955 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=96.697 s, sync=0.024 s, total=96.724 s; sync files=313, longest=0.001 s, average=0.001 s; distance=4333 kB, estimate=4333 kB
+2025-03-11 10:42:46.771 CET [19396] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2025-03-11 10:42:46.771 CET [19396] DETAIL:  Key (email)=(john@example.com) already exists.
+2025-03-11 10:42:46.771 CET [19396] STATEMENT:  INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING id, name, email
+2025-03-11 10:44:23.662 CET [9940] LOG:  checkpoint starting: time
+2025-03-11 10:44:24.378 CET [9940] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.710 s, sync=0.002 s, total=0.716 s; sync files=6, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=3900 kB
+2025-03-11 12:10:08.411 CET [21699] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:10:50.444 CET [21725] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:11:36.514 CET [21735] ERROR:  syntax error at or near "current_date" at character 28
+2025-03-11 12:11:36.514 CET [21735] STATEMENT:  SELECT current_date
+	SELECT current_date;
+2025-03-11 12:14:12.616 CET [21808] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:32:33.063 CET [22064] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:35:18.741 CET [22108] FATAL:  role "postgres" does not exist
+2025-03-11 12:35:28.131 CET [22113] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:35:33.713 CET [22117] FATAL:  database "tampert" does not exist
+2025-03-11 12:36:14.358 CET [22128] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:44:16.265 CET [22275] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:44:23.374 CET [9940] LOG:  checkpoint starting: time
+2025-03-11 12:44:24.093 CET [9940] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.714 s, sync=0.002 s, total=0.720 s; sync files=8, longest=0.001 s, average=0.001 s; distance=5 kB, estimate=3510 kB
+2025-03-11 12:45:54.642 CET [22778] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 12:59:32.062 CET [23044] LOG:  invalid length of startup packet
+2025-03-11 12:59:33.104 CET [23047] LOG:  invalid length of startup packet
+2025-03-11 13:18:25.842 CET [23389] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 13:19:23.159 CET [9940] LOG:  checkpoint starting: time
+2025-03-11 13:19:23.979 CET [9940] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.815 s, sync=0.002 s, total=0.821 s; sync files=9, longest=0.001 s, average=0.001 s; distance=6 kB, estimate=3160 kB
+2025-03-11 13:22:16.847 CET [23504] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 13:26:20.650 CET [25265] FATAL:  role "postgres" does not exist
+2025-03-11 15:18:56.221 CET [31269] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 15:20:31.038 CET [31836] FATAL:  database "dirksoentjens" does not exist
+2025-03-11 15:20:46.399 CET [31845] FATAL:  role "postgres" does not exist
+2025-03-11 15:34:24.964 CET [9940] LOG:  checkpoint starting: time
+2025-03-11 15:34:25.072 CET [9940] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.001 s, total=0.108 s; sync files=1, longest=0.001 s, average=0.001 s; distance=6 kB, estimate=2845 kB
+2025-03-11 15:34:25.623 CET [9939] LOG:  could not open file "postmaster.pid": No such file or directory
+2025-03-11 15:34:25.623 CET [9939] LOG:  performing immediate shutdown because data directory lock file is invalid
+2025-03-11 15:34:25.623 CET [9939] LOG:  received immediate shutdown request
+2025-03-11 15:34:25.624 CET [9939] LOG:  could not open file "postmaster.pid": No such file or directory
+2025-03-11 15:34:25.643 CET [9939] LOG:  database system is shut down
