@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { useUserStore } from "../stores/src/userStore";
+import { useUserStore } from "@/stores/src/userStore";
 
 const userStore = useUserStore();
 const name = ref("");
@@ -14,7 +14,7 @@ const handleLogin = async () => {
 
 <template>
   <div>
-    <h1>"Login"</h1>
+    <h1>Login</h1>
   </div>
   <div>
     <input v-model="email" placeholder="Email" />

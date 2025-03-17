@@ -1,5 +1,5 @@
 <script setup>
-import { useUserStore } from "../../stores/src/userStore";
+import { useUserStore } from "@/stores/src/userStore";
 const userStore = useUserStore();
 
 const handleAllUsers = async () => {
