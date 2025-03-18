@@ -13,25 +13,33 @@ const handleRegister = async () => {
 </script>
 
 <template>
-  <div>
-    <h1>Register</h1>
-  </div>
-  <div>
-    <input v-model="name" placeholder="Name" />
-    <input v-model="email" placeholder="Email" />
-    <input v-model="password" type="password" placeholder="Password" />
-    <button
-      @click="handleRegister"
-      :disabled="userStore.isLoading || !name || !email || !password"
-    >
-      register
-    </button>
-    <button
-      @click="userStore.isRegister = false"
-      :disabled="userStore.isLoading"
-      v-if="userStore.isRegister"
-    >
-      cancel
-    </button>
-  </div>
+  <v-container>
+    <v-row>
+      <v-responsive class="mx-auto" max-width="344">
+        <h1>Register</h1>
+
+        <v-text-field v-model="name" placeholder="Name" />
+        <v-text-field v-model="email" placeholder="Email" />
+        <v-text-field
+          v-model="password"
+          type="password"
+          placeholder="Password"
+        />
+        <v-btn
+          @click="handleRegister"
+          :disabled="userStore.isLoading || !name || !email || !password"
+        >
+          register
+        </v-btn>
+        <v-btn
+          @click="userStore.isRegister = false"
+          :disabled="userStore.isLoading"
+          v-if="userStore.isRegister"
+          class="ml-2"
+        >
+          cancel
+        </v-btn>
+      </v-responsive>
+    </v-row>
+  </v-container>
 </template>

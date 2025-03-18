@@ -1,11 +1,10 @@
 <script setup>
-// import HeaderComponent from './components/HeaderComponent.vue'
 import { computed } from "vue";
 import Dashboard from "@/components/Dashboard.vue";
 import Login from "@/components/Login.vue";
-import AllUsersList from "@/components/users/AllUsersList.vue";
 import Register from "@/components/Register.vue";
 import { useUserStore } from "@/stores/src/userStore";
+
 const userStore = useUserStore();
 
 const showLogin = computed(
@@ -17,46 +16,22 @@ const showRegister = computed(
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+  <v-container>
+    <v-row>
+      <div class="wrapper">
+        <Login v-if="showLogin" />
+        <Register v-if="showRegister" />
+      </div>
+    </v-row>
 
-    <div class="wrapper">
-      <Login v-if="showLogin" />
-      <Register v-if="showRegister" />
-    </div>
-  </header>
-
-  <main>
-    <Dashboard v-if="userStore.isAuthenticated" />
-    <AllUsersList />
-  </main>
+    <v-row>
+      <Dashboard v-if="userStore.isAuthenticated" />
+    </v-row>
+  </v-container>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  /* header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  } */
 }
 </style>

@@ -26,16 +26,6 @@ export const useUserStore = defineStore(
     // 🔵 ACTIONS (Functions that Modify State)
     const login = async (email, password) => {
       isLoading.value = true;
-      // try {
-      //   // Fake API call simulation (Replace with real API request)
-      //   await new Promise((resolve) => setTimeout(resolve, 1000));
-      //   user.value = { name: 'John Doe', email: 'john@example.com' };
-      //   token.value = 'fake-token-12345';
-      // } catch (error) {
-      //   console.error("Login failed:", error);
-      // } finally {
-      //   isLoading.value = false;
-      // }
 
       try {
         const response = await axios.post("http://localhost:5001/login", {
@@ -46,14 +36,14 @@ export const useUserStore = defineStore(
         if (response.data.token) {
           token.value = response.data.token;
           user.value = response.data.user;
-          isAuthenticated.value = true;
           localStorage.setItem("token", token.value);
         }
       } catch (error) {
-        console.error("Login failed:", error.response?.data || error.message);
-        throw new Error(error.response?.data?.error || "Login failed");
+        const errorMessage =
+          error.response?.data?.error ?? "An unknown error occurred";
+        throw new Error(errorMessage);
       } finally {
-        isLoading.value = false; // Stop loading
+        isLoading.value = false;
       }
     };
 
