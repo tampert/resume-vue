@@ -1,11 +1,14 @@
 {
   "name": "resume-vue",
   "version": "0.0.0",
+  "homepage": "https://tampert.github.io/resume-vue/",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "server": "npx nodemon server.cjs"
   },
@@ -19,6 +22,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "gh-pages": "^6.3.0",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.13.3",
     "pinia": "^3.0.1",
