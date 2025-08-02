@@ -25,3 +25,13 @@ npx nodemon server.cjs
 ```sh
 npm run build
 ```
+
+### Deploy
+
+https://medium.com/@aishwaryaparab1/deploying-vite-deploying-vite-app-to-github-pages-166fff40ffd3
+
+```sh
+npm run predeploy // Builds
+
+npm run deploy
+```
