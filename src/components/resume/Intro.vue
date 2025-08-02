@@ -3,7 +3,12 @@ import dirkSea from "@/assets/dirk_sea.jpeg";
 </script>
 
 <template>
-  <v-card subtitle="Web developer" title="Dirk Soentjens" :min-width="400">
+  <v-card
+    rounded="0"
+    subtitle="Web developer"
+    title="Dirk Soentjens"
+    :min-width="400"
+  >
     <v-list>
       <v-list-item>
         <v-img :src="dirkSea"></v-img>

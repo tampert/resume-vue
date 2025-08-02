@@ -11,7 +11,7 @@ import Experience from "./components/resume/Experience.vue";
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col cols="6">
         <Intro />
         <Contact />
         <Skills />
@@ -19,7 +19,7 @@ import Experience from "./components/resume/Experience.vue";
         <Languages />
         <Education />
       </v-col>
-      <v-col>
+      <v-col cols="6">
         <Experience />
       </v-col>
     </v-row>
