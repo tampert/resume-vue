@@ -28,6 +28,9 @@ const vuetify = createVuetify({
       mdi,
     },
   },
+  theme: {
+    defaultTheme: "dark", // 'light' | 'dark' | 'system'
+  },
 });
 
 const app = createApp(App);
