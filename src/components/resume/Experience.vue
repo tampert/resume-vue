@@ -30,23 +30,11 @@
         <strong>Primary responsibilities</strong>
         <v-list density="compact">
           <v-list-item prepend-icon="mdi-circle-small" slim>
-            development of the CtrlCHain App.
-          </v-list-item>
-          <!-- <v-list-item prepend-icon="mdi-circle-small" slim>
-            Lifing custom component Jquery library.
-          </v-list-item>
-          <v-list-item prepend-icon="mdi-circle-small" slim>
-            Develop icon-mapping-tool in React.
-          </v-list-item>
-          <v-list-item prepend-icon="mdi-circle-small" slim>
-            Fixing frontend test.
-          </v-list-item>
-          <v-list-item prepend-icon="mdi-circle-small" slim>
-            Solving Pentests.
+            Development of the CtrlChain App.
           </v-list-item>
           <v-list-item prepend-icon="mdi-circle-small" slim>
             Daily standups with the frontend team.
-          </v-list-item> -->
+          </v-list-item>
         </v-list>
         <strong>Technical challenges</strong>
         <v-list density="compact">
