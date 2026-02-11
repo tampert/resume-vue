@@ -9,6 +9,65 @@
   >
     <v-list>
       <v-list-item>
+        <strong>Frontend Developer</strong>
+        <p>
+          Team Pathfinders CtrlChain, Eindhoven NL, September 2025 -
+          2026
+        </p>
+        <strong>Primary tech stack</strong>
+        <v-list density="compact">
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            AngularJS, Typescript
+          </v-list-item>
+        </v-list>
+        <!-- <strong>Secondary tech stack</strong>
+        <v-list density="compact">
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            GROOVY, SSH, YAML, Jenkins, devops, release cycle/processes,
+            Cucumber tests.
+          </v-list-item>
+        </v-list> -->
+        <strong>Primary responsibilities</strong>
+        <v-list density="compact">
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            development of the CtrlCHain App.
+          </v-list-item>
+          <!-- <v-list-item prepend-icon="mdi-circle-small" slim>
+            Lifing custom component Jquery library.
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Develop icon-mapping-tool in React.
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Fixing frontend test.
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Solving Pentests.
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Daily standups with the frontend team.
+          </v-list-item> -->
+        </v-list>
+        <strong>Technical challenges</strong>
+        <v-list density="compact">
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Developing new features.
+          </v-list-item>
+          <!-- <v-list-item prepend-icon="mdi-circle-small" slim>
+            Working on Cobundo (frontend features in React, typescript)
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Learning tests setup with Cucumber and Gherkin
+          </v-list-item>
+          <v-list-item prepend-icon="mdi-circle-small" slim>
+            Learning multiple frontend courses udemy.
+          </v-list-item> -->
+        </v-list>
+      </v-list-item>
+
+
+
+      <v-list-item>
         <strong>Software Engineer</strong>
         <p>
           Team Frontend Workspace Axxerion Spacewell, Eindhoven NL, 2023 -

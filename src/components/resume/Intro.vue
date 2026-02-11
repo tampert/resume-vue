@@ -1,4 +1,5 @@
 <script setup>
+// @ts-ignore
 import dirkSea from "@/assets/dirk_sea.jpeg";
 </script>
 
