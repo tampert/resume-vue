@@ -17,16 +17,15 @@
         <strong>Primary tech stack</strong>
         <v-list density="compact">
           <v-list-item prepend-icon="mdi-circle-small" slim>
-            AngularJS, Typescript
+            AngularJS, Typescript, Tailwind 
           </v-list-item>
         </v-list>
-        <!-- <strong>Secondary tech stack</strong>
+        <strong>Secondary tech stack</strong>
         <v-list density="compact">
           <v-list-item prepend-icon="mdi-circle-small" slim>
-            GROOVY, SSH, YAML, Jenkins, devops, release cycle/processes,
-            Cucumber tests.
+            Azure Cloud, Git repos, Figma
           </v-list-item>
-        </v-list> -->
+        </v-list>
         <strong>Primary responsibilities</strong>
         <v-list density="compact">
           <v-list-item prepend-icon="mdi-circle-small" slim>
@@ -41,15 +40,9 @@
           <v-list-item prepend-icon="mdi-circle-small" slim>
             Developing new features.
           </v-list-item>
-          <!-- <v-list-item prepend-icon="mdi-circle-small" slim>
-            Working on Cobundo (frontend features in React, typescript)
-          </v-list-item>
           <v-list-item prepend-icon="mdi-circle-small" slim>
-            Learning tests setup with Cucumber and Gherkin
+            Userstories, acceptance criteria, backlogs.
           </v-list-item>
-          <v-list-item prepend-icon="mdi-circle-small" slim>
-            Learning multiple frontend courses udemy.
-          </v-list-item> -->
         </v-list>
       </v-list-item>
 
