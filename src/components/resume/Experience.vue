@@ -23,7 +23,7 @@
         <strong>Secondary tech stack</strong>
         <v-list density="compact">
           <v-list-item prepend-icon="mdi-circle-small" slim>
-            Azure Cloud, Git repos, Figma
+            Azure DevOps, Git repos, Figma
           </v-list-item>
         </v-list>
         <strong>Primary responsibilities</strong>
